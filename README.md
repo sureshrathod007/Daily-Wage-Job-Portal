@@ -1,68 +1,134 @@
-\# Daily Wage Job Portal 💼
+# Daily Wage Job Portal 💼
 
+A web-based platform that connects daily wage workers with employers offering temporary and daily employment opportunities. The portal helps workers discover job opportunities and enables employers to post jobs and manage applicants through a simple, user-friendly interface.
 
+## 📌 Project Overview
 
-A web-based platform that connects daily wage workers with employers. The system allows workers to find jobs easily and employers to post job opportunities.
+Finding daily wage employment can be challenging for workers, while employers may struggle to find suitable workers quickly. The Daily Wage Job Portal aims to simplify this process by providing a centralized platform for job discovery, job posting, and worker-employer connections.
 
+## ✨ Features
 
+### 👷 Worker
+- User registration and login
+- Browse available job opportunities
+- Manage worker profile information
+- Edit profile details
+- Receive job-related notifications
 
-\## Features
+### 🏢 Employer
+- Registration and login
+- Post job opportunities
+- Manage posted jobs
+- View applicants and worker information
 
-\- User registration and login
+### 🔐 Admin
+- Administrative login
+- Dashboard for managing portal information
 
-\- Job posting by employers
+## 🛠️ Technology Stack
 
-\- Job search for workers
+| Component | Technology |
+|---|---|
+| Frontend | HTML, CSS, JavaScript |
+| Backend | Python, Flask |
+| Database | SQLite |
+| Version Control | Git, GitHub |
 
-\- Simple and user-friendly interface
+## 📂 Project Structure
 
+```text
+Daily-Wage-Job-Portal/
+├── app.py
+├── db.py
+├── schema.sql
+├── README.md
+├── .gitignore
+├── static/
+│   ├── css/
+│   ├── images/
+│   └── js/
+└── templates/
+    ├── index.html
+    ├── login.html
+    ├── register.html
+    ├── browse_jobs.html
+    ├── worker.html
+    ├── employer.html
+    └── admin_dashboard.html
+```
 
+## ⚙️ Installation and Setup
 
-\## Tech Stack
+### Prerequisites
+- Python 3.x
+- pip
+- Git (optional)
 
-\- Frontend: (HTML-CSS-js)
+### 1. Clone the repository
 
-\- Backend: (Flask)
+```bash
+git clone https://github.com/sureshrathod007/Daily-Wage-Job-Portal.git
+cd Daily-Wage-Job-Portal
+```
 
-\- Database: (SQLite)
+### 2. Create a virtual environment
 
+```bash
+python -m venv venv
+```
 
+Activate it on Windows PowerShell:
 
-\## Screenshots 
+```powershell
+.\venv\Scripts\Activate.ps1
+```
 
+### 3. Install dependencies
 
+```bash
+pip install Flask
+```
 
-\### Home Page
+Install any additional packages required by the application.
 
-<img src="screenshots/jobportal/jobportal.png" width="800"/>
+### 4. Configure the Flask secret key
 
+Set a private secret key in your terminal before running the application. Generate your own secure random value and do not commit it to GitHub.
 
+```powershell
+$env:SECRET_KEY = "your-own-random-secret"
+```
 
-\### User Registration
+### 5. Run the application
 
-<img src="screenshots/jobportal/jobportal-signup.png" width="500"/>
+```bash
+python app.py
+```
 
+Open the local address shown in the terminal, usually:
 
+http://127.0.0.1:5000
 
-\### Worker Dashboard
+## 📸 Screenshots
 
-<img src="screenshots/jobportal/jobportal-worker.png" width="800"/>
+Screenshots are not currently included in this repository. Screenshots of the home page, worker dashboard, employer dashboard, job browsing page, and admin dashboard can be added after capturing the running application.
 
+## 🎯 Project Objective
 
+To provide an accessible platform for daily wage workers to discover employment opportunities and help employers connect with potential workers efficiently.
 
-\### Employer Dashboard
+## 👥 Team Members
 
-<img src="screenshots/jobportal/jobportal-employee.png" width="800"/>
+This group project was collaboratively developed by:
 
+1. **Suresh Rathod**
+2. **Vikas Shejul**
+3. **Ajay Lonkar**
 
+## 🤝 Project Collaboration
 
-\### Profile Page
+The team worked collaboratively on the planning, design, development, and documentation of the Daily Wage Job Portal.
 
-<img src="screenshots/jobportal/jobportal-workerprofile.png" width="500"/>
+## 📄 License
 
-
-
-\## Author
-
-Vikas Popatrao Shejul
-
+No license has been specified yet.
